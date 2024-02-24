@@ -263,24 +263,7 @@ class AlexIsFatTest(OVOSSkill):
             LOG.warning(("To be able to see debug logs, you need to change the")
                         ("'log_level' setting to 'DEBUG' in the core ")
                         ("configuration (mycroft.conf)"))
-                    
-        self.speak_dialog("how.are.you")
-        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
-                 ("error, and exception."))
-        # Skills can log useful information. These will appear in the CLI and
-        # in the skills.log file under ~/.mycroft/logs. LOG.info() is the most
-        # common log level, but it is recommended to use the others when
-        # appropriate:
-        # LOG.debug() - Messages useful for developers to debug the skill
-        # LOG.warning() - Indicates something unexpected happened, but the skill
-        #                 can recover
-        # LOG.error() - Indicates a recoverable error
-        # LOG.exception() - Indicates an exception that causes the skill to crash
-        #                  and is non-recoverable
-        if self.log_level == "WARNING":
-            LOG.warning(("To be able to see debug logs, you need to change the")
-                        ("'log_level' setting to 'DEBUG' in the core ")
-                        ("configuration (mycroft.conf)"))
+
 
     @intent_handler("InventHoliday.intent")
     def handle_invent_holiday_intent(self, message):
