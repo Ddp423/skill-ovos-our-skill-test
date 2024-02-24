@@ -69,7 +69,7 @@ class AlexIsFatTest(OVOSSkill):
         return self.settings.get("log_level", "INFO")
 
     @intent_handler("AlexIsFat.intent")
-    def handle_how_are_you_intent(self, message):
+    def handle_alex_is_fat_intent(self, message):
         self.speak_dialog("alex.is.fat")
         LOG.info(("There are five types of log messages: 'info, debug, warning, ")
                  ("error, and exception."))
