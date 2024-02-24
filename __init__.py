@@ -54,7 +54,7 @@ class AlexIsFatTest(OVOSSkill):
         # this can be tested using `mana` (https://github.com/NeonGeckoCom/neon-mana-utils)
         # `mana send-message hello.world`
         # self.add_event("hello.world", self.handle_hello_world_intent)
-        self.my_var = "hello world"
+        self.my_var = "alex is fat"
 
     def on_settings_changed(self):
         """This method is called when the skill settings are changed."""
