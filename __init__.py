@@ -53,7 +53,7 @@ class AlexIsFatTest(OVOSSkill):
         # https://openvoiceos.github.io/message_spec/
         # this can be tested using `mana` (https://github.com/NeonGeckoCom/neon-mana-utils)
         # `mana send-message hello.world`
-        # self.add_event("hello.world", self.handle_hello_world_intent)
+        self.add_event("fav.subnautica.creature", self.handle_how_are_you_intent)
         self.my_var = "alex is fat"
 
     def on_settings_changed(self):
