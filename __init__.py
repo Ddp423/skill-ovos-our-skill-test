@@ -24,14 +24,14 @@ class AlexIsFatTest(OVOSSkill):
     @classproperty
     def runtime_requirements(self):
         return RuntimeRequirements(
-            internet_before_load=False,
-            network_before_load=False,
+            internet_before_load=True,
+            network_before_load=True,
             gui_before_load=False,
-            requires_internet=False,
-            requires_network=False,
+            requires_internet=True,
+            requires_network=True,
             requires_gui=False,
-            no_internet_fallback=True,
-            no_network_fallback=True,
+            no_internet_fallback=False,
+            no_network_fallback=False,
             no_gui_fallback=True,
         )
     
